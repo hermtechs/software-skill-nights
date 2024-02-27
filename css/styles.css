@@ -169,7 +169,7 @@ nav h3{
     align-items: center;
     justify-content: center;
     justify-items: center;
-    margin: 1.5rem 1rem;
+    /* margin: 1.5rem 1rem; */
     background-color: #04153F;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Ccircle stroke='%231E173F' vector-effect='non-scaling-stroke' id='a' fill='none' stroke-width='5' r='315'/%3E%3Cuse id='f' href='%23a' stroke-dasharray='100 100 100 9999'/%3E%3Cuse id='b' href='%23a' stroke-dasharray='250 250 250 250 250 9999'/%3E%3Cuse id='e' href='%23a' stroke-dasharray='1000 500 1000 500 9999'/%3E%3Cuse id='g' href='%23a' stroke-dasharray='1500 9999'/%3E%3Cuse id='h' href='%23a' stroke-dasharray='2000 500 500 9999'/%3E%3Cuse id='j' href='%23a' stroke-dasharray='800 800 800 800 800 9999'/%3E%3Cuse id='k' href='%23a' stroke-dasharray='1200 1200 1200 1200 1200 9999'/%3E%3Cuse id='l' href='%23a' stroke-dasharray='1600 1600 1600 1600 1600 9999'/%3E%3C/defs%3E%3Cg transform='translate(1000 750)' %3E%3Cg transform='rotate(0 0 0)' %3E%3Ccircle fill='%231E173F' r='10'/%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23f' transform='scale(.1) rotate(50 0 0)' /%3E%3Cuse href='%23f' transform='scale(.2) rotate(100 0 0)' /%3E%3Cuse href='%23f' transform='scale(.3) rotate(150 0 0)' /%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23b' transform='scale(.4) rotate(200 0 0)' /%3E%3Cuse href='%23z' transform='scale(.5) rotate(250 0 0)' /%3E%3C/g%3E%3Cg id='z' transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23b'/%3E%3Cuse href='%23b' transform='scale(1.2) rotate(90 0 0)' /%3E%3Cuse href='%23b' transform='scale(1.4) rotate(60 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.6) rotate(120 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.8) rotate(30 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg id='y' transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23e' transform='scale(1.1) rotate(20 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.3) rotate(-40 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.5) rotate(60 0 0)' /%3E%3Cuse href='%23h' transform='scale(1.7) rotate(-80 0 0)' /%3E%3Cuse href='%23j' transform='scale(1.9) rotate(100 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23h' transform='scale(2) rotate(60 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.1) rotate(120 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.3) rotate(180 0 0)'/%3E%3Cuse href='%23h' transform='scale(2.4) rotate(240 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.5) rotate(300 0 0)'/%3E%3C/g%3E%3Cuse href='%23y' transform='scale(2) rotate(180 0 0)' /%3E%3Cuse href='%23j' transform='scale(2.7)'/%3E%3Cuse href='%23j' transform='scale(2.8) rotate(45 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.9) rotate(90 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.1) rotate(135 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.2) rotate(180 0 0)'/%3E%3C/g%3E%3Cuse href='%23k' transform='scale(3.3) rotate(225 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.5) rotate(270 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.6) rotate(315 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.7)'/%3E%3Cuse href='%23k' transform='scale(3.9) rotate(75 0 0)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 /* background-attachment: fixed; */
@@ -317,8 +317,263 @@ padding: 1rem;
 
 /* ABOUT US SECTION */
 
-/* ABOUT US SECTION */
 
+/* ABOUT ME SCTION START */
+/* Container needed to position the button. Adjust the width as needed */
+.video-container {
+    position: relative;
+    /* width: 50%; */
+    max-width: 100%;
+  }
+  .video-container iframe{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+  }
+  /* Make the image responsive */
+  /* .video-container iframe {
+    width: 100%;
+    height: auto;
+    width:640px !important;
+    height:360;
+  } */
+  
+  /* Style the button and place it in the middle of the container/image */
+  .video-container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 0.9rem 1.3rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: 100ms ease-in;
+  }
+  
+  .video-container .btn:hover {
+    opacity: 0.9;
+  }
+
+/*video popup styles*/
+.vimeo-shadowbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s ease;
+}
+.vimeo-shadowbox--hidden {
+  opacity: 0;
+  z-index: -1000;
+  visibility: hidden;
+  pointer-events: none;
+}
+.vimeo-shadowbox__video-wrapper {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 640px;
+}
+.vimeo-shadowbox__video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.vimeo-shadowbox__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem;
+}
+.vimeo-shadowbox__close-button{
+  width: 30px;
+  height: 30px;
+  background: rgb(7, 24, 176);
+  border-radius: 50%;
+  position: absolute;
+  padding: 0.5rem;
+  bottom:0;
+  top: -0.5rem;
+  right: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+/* .vimeo-shadowbox__close-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  overflow: hidden;
+  text-indent: -9999em;
+  background: green;
+} */
+
+
+/* EBOOK SECTION START */
+.ebook-section .small-title{
+    all: unset;
+      color: #57dd74 !important;
+  }
+  .ebook-section{
+      /* background: #080924; */
+    background: linear-gradient(#031630, #052f167b);
+      align-items: center;
+      justify-items: center;
+  }
+  .ebook-section img{
+      height: 100%;
+  }
+  .about-ebook-txt{
+      box-shadow: rgba(5, 34, 80, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .ebook-section .about-ebook-txt{
+      padding: 2rem 1.5rem;
+      border-radius: 0.4rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .about-ebook-txt p{
+      max-width: 550px;
+  }
+  .about-ebook-txt>*{
+      margin-bottom: 0.95rem;
+  }
+  .ebook-section .small-title{
+      color: #444ff1;
+      font-weight: bolder;
+      margin-bottom: 2rem;
+  }
+  .about-ebook-txt h2{
+      font-size:2rem;
+      color: #57b7dd;
+      margin: 1.5rem 1rem;
+  }
+  .purchase-ebook-items{
+      display: flex;
+      align-items: center;
+      margin-top: 0.8rem;
+  }
+  .purchase-ebook-items a{
+      background: linear-gradient(#0c38e5,#57b7dd);
+      padding: 0.3rem 1rem;
+      border-radius: 0.2rem;
+      transition: 200ms ease-in-out;
+  }
+  .purchase-ebook-items a:hover, .after-txt-btn:hover{
+      opacity: 0.9;
+  }
+  .purchase-ebook-items span{
+      margin-left: 1.5rem;
+      color: #57b7dd;
+      font-weight: bolder;
+      user-select: none;
+  }
+  .after-txt-btn{
+      background: linear-gradient(#0c38e5,#57b7dd);
+      padding: 0.3rem 1rem;
+      border-radius: 0.2rem;
+      transition: 200ms ease-in-out;
+      max-width: 200px;
+      margin: 1rem;
+  }
+  
+  /* contact us section */
+  .contact_us_green .responsive-container-block {
+      min-height: 75px;
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-bottom: 60px;
+      margin-left: auto;
+      background-color: #0D0E31;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%230e0e35' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%230f0e39' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23110e3c' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23120e40' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23130E44' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+    }
+    
+    .contact_us_green input:focus {
+      outline-color: initial;
+      outline-style: none;
+      outline-width: initial;
+    }
+    
+    .contact_us_green textarea:focus {
+      outline-color: initial;
+      outline-style: none;
+      outline-width: initial;
+    }
+    
+    .contact_us_green .text-blk {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      line-height: 25px;
+      color: #26e3c2;
+    }
+/* video-popup */
+
+/* ABOUT US SECTION END */
+
+
+/* ABOUT US SECTION */
+/* START OF WE'D LIKE TO HEAR FROM YOU SECTION */
+.follow-us{
+    background: linear-gradient(#033025, #052f167b);
+
+}
+.secttion-title-main{
+    text-align: center;
+    /* margin-bottom: 1rem; */
+    padding: 1rem;
+    font-size: 2rem;
+}
+.social-media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0.8rem 1rem;
+    margin-top: 1.4rem;
+}
+.social-media-link{
+font-size: 0.8rem;
+display: flex;
+align-items: center;
+gap: 0.8rem;
+border: 2px solid #d07309c7;
+padding: 0.8rem 1.5rem;
+border-radius: 0.8rem;
+}
 
 /* END OF FEATURED EVENT SECTION */
 
