@@ -46,6 +46,7 @@ header{
     left: 0;
     right: 0;
     background: var(--clr-oxford-blue);
+    z-index: 2000;
 }
 .logo img{
     width: 20px;
@@ -121,6 +122,8 @@ nav h3{
     align-items: center;
     opacity: 0.9;
     padding-bottom: 2rem;
+    z-index: 2000;
+
 }
 /* .side-menu-links{
     display: none;
@@ -331,7 +334,7 @@ padding: 1rem;
     bottom: 0;
     height: 100%;
     width: 100%;
-    z-index: 1000;
+    /* z-index: 1000; */
   }
   /* Make the image responsive */
   /* .video-container iframe {
@@ -374,7 +377,7 @@ padding: 1rem;
 }
 .vimeo-shadowbox--hidden {
   opacity: 0;
-  z-index: -1000;
+  z-index: 1000;
   visibility: hidden;
   pointer-events: none;
 }
@@ -546,6 +549,10 @@ padding: 1rem;
 
 /* ABOUT US SECTION */
 /* START OF WE'D LIKE TO HEAR FROM YOU SECTION */
+/* .thumbnail-image{
+    position: relative;
+    z-index: 1;
+} */
 .follow-us{
     background: linear-gradient(#033025, #052f167b);
 
