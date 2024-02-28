@@ -19,6 +19,19 @@ i{
 img{
     max-width: 100%;
 }
+.icon{
+    position: relative;
+    width: 18px;
+    height:16px;
+    margin-left: 0.1rem;
+}
+.apply-btn .icon{
+    top: 0.2rem;
+}
+.icon-lg{
+  width: 30px;
+  /* height: 20px;   */
+}
 a{
     text-decoration: none;
     color: #fff;
@@ -26,6 +39,20 @@ a{
 .section-title{
     text-align: center;
     padding: 1rem;
+}
+.linkedin-icon{
+    fill:#0e76a8;
+}
+.instagram-icon{
+fill: #FCAF45;
+}
+
+.mail-icon{
+    fill: #d07309c7 !important;
+    display: inline-block;
+}
+.youtube-icon{
+fill: #FF0000 !important;
 }
 body{
     background: var(--clr-oxford-blue);
@@ -67,7 +94,7 @@ nav{
     color: #fff;
     position: relative;
     text-align: center;
-    border-bottom: 1px solid rgb(40, 34, 93);
+    border-bottom: 1px solid #28225d;
 }
 .nav-links{
     display: grid;
@@ -234,8 +261,8 @@ align-items: center;
 gap: 15px;
 /* max-width: 1000px; */
 width: 100%;
-margin: 3rem auto;
-background: linear-gradient(#031630, #052f167b);
+margin: 2rem auto;
+background: linear-gradient(#031c3e, #073d1d7b);
 padding: 1rem;
 }
 .main-benefits-container{
@@ -250,12 +277,13 @@ padding: 1rem;
     width: 100%;
 }
 .main-benefit{
-    background: #0116097b;
-    margin: 1rem;
+    /* background: #0116097b; */
+    /* background: linear-gradient( #094d3b7b,#031c30); */
+    /* margin: 1rem; */
     /* width: 100%; */
     min-width: 300px;
     max-width: 400px;
-    padding: 2rem 1.5rem;
+    padding: 1.2rem 1.5rem;
     line-height: 1.7;
     color: #ded6d6;
     font-weight: bolder;
@@ -265,6 +293,8 @@ padding: 1rem;
 }
 .benefit-title{
     font-size: 1.3rem;
+    color: #ed922bc7;
+    margin-bottom: 0.4rem;
 }
 
 /*START OF FEATURED EVENT SECTION */
@@ -580,6 +610,7 @@ gap: 0.8rem;
 border: 2px solid #d07309c7;
 padding: 0.8rem 1.5rem;
 border-radius: 0.8rem;
+/* justify-content: space-between; */
 }
 
 /* END OF FEATURED EVENT SECTION */
