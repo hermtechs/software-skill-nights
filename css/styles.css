@@ -29,7 +29,9 @@ img{
     top: 0.2rem;
 }
 .icon-lg{
-  width: 30px;
+  width: 25px;
+  position: relative;
+  margin-right: 0.2rem;
   /* height: 20px;   */
 }
 a{
@@ -282,6 +284,7 @@ padding: 1rem;
     /* margin: 1rem; */
     /* width: 100%; */
     min-width: 300px;
+    display: flex;
     max-width: 400px;
     padding: 1.2rem 1.5rem;
     line-height: 1.7;
@@ -289,12 +292,17 @@ padding: 1rem;
     font-weight: bolder;
     border-radius: 1rem;
     justify-self: center;
+    justify-content: center;
     /* max-width: 1200px; */
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 .benefit-title{
     font-size: 1.3rem;
     color: #ed922bc7;
     margin-bottom: 0.4rem;
+    text-align: center;
 }
 
 /*START OF FEATURED EVENT SECTION */
