@@ -34,6 +34,14 @@ img{
   margin-right: 0.2rem;
   /* height: 20px;   */
 }
+.highlighted-txt{
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+    background: -webkit-linear-gradient(#45a0f5, #26e3c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 a{
     text-decoration: none;
     color: #fff;
@@ -303,8 +311,13 @@ padding: 1rem;
     color: #ed922bc7;
     margin-bottom: 0.4rem;
     text-align: center;
+    letter-spacing: 2px;
 }
-
+.main-benefit p {
+    text-align: center;
+    color: #928d8d;
+    font-weight: bolder;
+}
 /*START OF FEATURED EVENT SECTION */
 .upcoming-event{
     margin: 1.2rem auto;
