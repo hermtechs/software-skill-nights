@@ -641,9 +641,38 @@ padding: 0.8rem 1.5rem;
 border-radius: 0.8rem;
 /* justify-content: space-between; */
 }
+footer{
+    padding: 2rem;
+    background: linear-gradient(#030f30, #04324a7b);
 
+}
+.important-links{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: #bebcbc;
+}
+.important-links a{
+    color: #bebcbc;
+    transition: 200ms ease-in;
+}
+.important-links a:hover{
+    color: #efecec;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    /* padding: 1rem; */
+    border-top: 1px solid #bebcbc;
+    padding: 0.8rem 1rem;
+    color: #bebcbc;
+    margin-top: 1rem;
+}
 /* END OF FEATURED EVENT SECTION */
-
 
 /* media queries */
 @media(max-width:800px){
@@ -681,36 +710,3 @@ border-radius: 0.8rem;
         max-height: 380px;
     }
 }
-
-/* START OF PRICING PLANS SECTION */
-.titles{
-  text-align: center;
-  padding-bottom: 2rem;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  flex-direction: column;
-}
-.titles p{
-    padding: 0.5rem;
-    max-width: 600px;
-}
-
-/* hide scroll bars on chrome */
-.technologies-used::-webkit-scrollbar {
-    display: none;
-  }
-.technologies-used{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }  
-/* END OF PRICING PLANS SECTION */
-
-/* make side menu disappear on big screens if open */
-@media(min-width:800px){
-    .side-menu-links{
-    transform: translateX(100%);
-    }   
-}
-/* end of media queries */
